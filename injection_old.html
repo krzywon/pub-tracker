@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html>
+<head>
+<title>NIST - Center for Neutron Research - Small-Angle Neutron Scattering Group</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="http://www.ncnr.nist.gov/programs/sans/scripts/style.css" type="text/css">
+<script src="http://www.ncnr.nist.gov/programs/sans/scripts/java_scripts.js" type="text/javascript"></script>
+<style type="text/css">
+	body {
+	width: 98%;
+	border: 0;
+	margin: 1%;
+	padding: 0;
+	}
+	th {
+	background: blue;
+	color: white;
+	text-align: center;
+	}
+	tr td {
+	background: white;
+	color: black;
+	text-align: left;
+	border-bottom: 1px solid gray;
+	}
+	tr td a {
+	color: blue;
+	text-decoration: underline;
+	}
+	tr td a:hover {
+	color: red;
+	text-decoration: underline;
+	}
+</style>
+</head>
+
+<body>
+
+<h1>SANS Publication Submission Form</h1>
+
+<form action="pubadd.php" method="post">
+	<h2>Please enter the information as accurately as possible.  If the article is in press or submitted, please enter Press or Submitted as the Volume.</h2>
+	<p><label for="title">Article Title:<input type="text" size="60" name="title" id="title"></label></p>
+	<p>
+		<label for="year">Year Published:<input type="text" size="4" name="year" id="year" value="<?php echo date("Y")?>"></label>
+		<label for="volume">Volume:<input type="text" size="6" name="volume" id="volume"></label>
+		<label for="issue">Issue:<input type="text" size="3" name="issue" id="issue"></label>
+		<label for="firstpage">Number of First Page:<input type="text" size="6" name="firstpage" id="firstpage"></label>
+	</p>
+	<p>
+		<label for="journal">Journal Name - Choose Other if the journal is not listed:
+		<select name="journal">
+		
+		<?php 
+		require 'DB.php';
+		$db = mysqli_connect('localhost','root','','publications'); 
+		$q = mysqli_query($db,"SELECT journalName FROM journalinformation ORDER BY journalName");
+		while ($row = mysqli_fetch_row($q)) { 
+			$row_fixed = htmlentities($row[0]); 
+			print "<option>$row_fixed</option>\n"; 
+		} 
+		mysqli_close($db); ?>
+		
+		<option>Other...</option>
+		</select></label>
+	</p>
+	<p><label for="doi">Article Document Object Identifier Permalink:<input type="text" name="doi" id="doi" value="http://dx.doi.org/"></label></p>
+	<p><label for="authors">How Many Authors Does this Article Have?:<input type="text" name="authors" id="authors"></label></p>
+	<p><label for="nistauthor">Is there a NIST author?:<input type="checkbox" name="nistauthor"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="pdf">Do you have a PDF?:<input type="checkbox" name="pdf"></label></p>
+	<br>
+	<p>Which Instruments/Software were used?:</p>
+	<p><label for="ng3sans">NG3 30m SANS:<input type="checkbox" name="ng3sans"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="ng7sans">NG7 30m SANS:<input type="checkbox" name="ng7sans"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="ngb10msans">NGB 10m SANS:<input type="checkbox" name="ngb10msans"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="ngb30msans">NGB 30m SANS:<input type="checkbox" name="ngb30msans"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="bt5usans">BT5 USANS:<input type="checkbox" name="bt5usans"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="igor">IGOR:<input type="checkbox" name="igor"></label></p>
+	<p>Which Sample Environment(s) were utilized?</p>
+	<p><label for="changer">Sample Changer (10CB/7HB/9P):<input type="checkbox" name="changer"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="rheometer">Rheometer:<input type="checkbox" name="rheometer"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="bsc">Shear Cell - Boulder:<input type="checkbox" name="bsc"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="12sc">Shear Cell - 1,2-Plane:<input type="checkbox" name="12sc"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="ppsc">Shear Cell - Plate/Plate:<input type="checkbox" name="ppsc"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="ccr">Closed-Cycle Refrigerator:<input type="checkbox" name="ccr"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="em">Electromagnet (HM1/Titan/etc):<input type="checkbox" name="em"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="scm">Superconducting Magnet:<input type="checkbox" name="scm"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="pa">Polarization (He3/PASANS):<input type="checkbox" name="pa"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="humidity">Humidity Chamber:<input type="checkbox" name="humidity"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="userequi">User Provided Equipment:<input type="checkbox" name="userequip"></label>&nbsp;&nbsp;|&nbsp;&nbsp;<label for="otherequip">Other:<input type="checkbox" name="otherequip"></label></p>
+	<p>
+		<INPUT type="submit" value="Continue to the Next Step">
+		<INPUT type="reset">
+	</p>
+</form>
+
+</body>
+</html>

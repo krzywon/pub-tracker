@@ -1,0 +1,65 @@
+<!--
+	TODO:
+		(1) Actually create the modification php file
+		(2) Check, using JS, what fields have been changed.
+		(3) Only send updated values and pub_id to php class
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SANS Publications Modification Form</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="http://www.ncnr.nist.gov/programs/sans/scripts/style.css" type="text/css">
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+		<script src="js/changetable.js" type="text/javascript"></script>
+		<script src="js/formcheck.js" type="text/javascript"></script>
+		<script src="js/livesearch.js" type="text/javascript"></script>
+	</head>
+	
+	<body onload="getPubsByYear('0000', 'listoftitles')" id="mainbody">
+	<h1>SANS Publication Modification Form</h1>
+	
+	<form id="myform" action="php/modify_pub.php" method="post" class="bordered">
+		<h2>Select the year and the publication title to modify an article</h2>
+		<p>
+			<label for="year">Select the Publication Year:
+				<select name="year" id="year" onchange="getPubsByYear(this.value, 'listoftitles')">
+					<option SELECTED value="0">&nbsp;&nbsp;</option>
+					<?php
+						// Get all publication years from the database and list each unique entry
+						/*
+						require 'DB.php';
+						$db = mysqli_connect('localhost','root','','publications');
+						$q = mysqli_query($db,"SELECT DISTINCT(year) AS year FROM sanspublications ORDER BY year DESC");
+						while ($row = mysqli_fetch_row($q)) {
+							$row_fixed = htmlentities($row[0]);
+							print "\t\t\t\t<option>$row_fixed</option>\n";
+						}
+						*/
+						include 'php/database_class.php';
+						$connect = new connection();
+						$order = "year DESC";
+						$rows = ['DISTINCT(year)'];
+						$tbl = 'publication';
+						$q = $connect->get_all_results($tbl, $rows, NULL, $order);
+						foreach ($q as $row) {
+							$row_fixed = htmlentities($row[0]);
+							print "\t\t\t\t<option>$row_fixed</option>\n";
+						}
+					?>
+				</select>
+			</label>
+			</p>
+			<p>
+			<label for="listoftitles" id="titlelist">Title:
+				<select name="listoftitles" id="listoftitles" onchange="fillModificationForm(this.value, 'pubtobemodified')">
+					<option SELECTED>&nbsp;&nbsp;</option>
+				</select>
+			</label>
+		</p>
+	</form>
+	<div id="pubtobemodified">
+	</div>
+	</body>
+</html>

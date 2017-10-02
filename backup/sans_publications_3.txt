@@ -1,0 +1,20 @@
+271;Bauer BJ;1;Journal of Polymer Science B;2004;42 (17);3070;1;NG1SANS;NOT CHRNS;Transformation of Phase Size Distribution into Scattering Intensity
+273;Kaler EW;0;(M. Abe and J. Scamehorn, 2nd ed.),  Marcel Dekker, New York, 2004.;2004;;;0;NG3SANS;CHRNS;Phase Behavior and Microstructure in Aqueous Mixtures in Mixed Surfactant Systems Cationic and Anionic Surfactants;Herrington KL;Iampietro DJ;Coldren BA, Jung HT, Zasadzinski JA
+274;Lonetti B;0;Physical Chemistry Chemical Physics;2004;6 (7);1388;1;NG7SANS;NOT CHRNS;Viscoelastic and small angle neutron scattering studies of concentrated protein solutios;Fratini E;Chen SH;Baglioni P
+276;Malwitz MM;0;Physical Chemistry Chemical Physics;2004;6 (11);2977;1;NG7SANS;NOT CHRNS;Layered Structures of Shear-Oriented and Multilayered PEO-Silicate Nanocomposite Films;Dundigalla A;Ferreiro V;Butler PD, Henk MC, Schmidt, G
+281;Nieh M-P;1;Biophysical Journal;2004;86 (4);2615;1;NG7SANS;NOT CHRNS;Spontaneously Formed Monodispersed Biomimetic Unilamellar Vesicles: The Effect of Charge, Dilution and Time;Harroun TA;Raghunathan VA;Glinka CJ, Katsaras, J
+282;Yurekli K;0;Journal of the American Chemical Society;2004;126 (32);9902;1;NG3SANS;CHRNS;Small Angle Neutron Scattering from Surfactant Assisted Aqueous Dispersions of Carbon Nanotubes.;Mitchell CA;Krishnamoorti R
+283;Yurekli K;0;Journal of Polymer Science B;2004;42 (17);3204;1;NG3SANS and NG7SANS;CHRNS;Thermodynamic Interactions in Blends of Poly(4 tert butyl styrene) and Polyisoprene by Small Angle Neutron Scattering;Krishnamoorti R
+286;Singh M;0;Langmuir;2004;20 (14);5693;1;NG3SANS;CHRNS;Shear Orientation of a Rigid Surfactant Mesophase;Agarwal V;DeKee D;Bose A, McPherson G, John V
+287;Singh M;0;Langmuir;2004;20 (18);7392;1;NG3SANS;CHRNS;Structural Evolution of a Two-Component Organogel;Tan G;Agarwal V;Bose A, McPherson G, John V
+288;Schubert BA;0;Langmuir;2004;20 (9);3564;1;NG3SANS;CHRNS;Shear-Induced Phase Separation in Solutions of Wormlike Micelles;Wagner NJ;Kaler EW;Raghavan, SR
+289;Perahia D;0;Journal of Polymer Science B;2004;42(17);3165;1;NG3SANS;CHRNS;From the conformation of a single molecule to physical networks in highly interacting polymers: A small-angle neutron study.;Jiao X;Traiphol R
+290;Pakstis L;0;Biomacromolecules;2004;5 (2);312;1;USANS;CHRNS;The Effect of Chemistry and Morphology on the Biofunctionality of Self-Assembling Diblock Copolypeptide Hydrogels;Nowak AP;Deming TJ;Pochan DJ
+291;Ozbas B;0;Macromolecules;2004;37 (19);7331;1;NG3SANS;CHRNS;Salt-Triggered Peptide Folding and Consequent Self-Assembly into Hydrogels with Tunable Modulus;Kretsinger J;Rajagopal K;Schneider JP, Pochan DJ
+292;Wang H;0;Journal of Polymer Science B;2004;42 (17);3133;1;NG1SANS;NOT CHRNS;Time-Resolved SANS Study of Polyethylene Crystallization from Solution
+293;Wang H;1;Nano Letters;2004;4 (9);1789;1;NG1SANS and NG7SANS;NOT CHRNS;Dispersing Single-Wall Carbon Nanotubes with Surfactants: A Small Angle Neutron Scattering Study;Zhou W;Ho DL;Winey KI, Fischer JE, Glinka CJ, Hobbie EK
+295;Liu Y;0;Journal of the American Chemical Society;2004;126 (8);2276;1;NG3SANS;CHRNS;Shear Induced Alignment and Nanowire Silica Synthesis in a Rigid Crystalline Surfactant Mesophase;Singh M;McPherson GL;Agarwal V, Bose A, John V
+297;Balsara NP;0;Journal of Polymer Science B;2004;42 (10);1793;1;NG3SANS;CHRNS;Does Conventional Nucleation Occur During Phase Separation in Polymer Blends?";Rappl TJ;Lefervre AA
+630;Lelong G;0;Journal of Chemical Physics;2007;127 (06);065102;1;NG7saNS and IGOR;NOT CHRNS;Dynamics of trehalose molecules in confined solutions;Price DL;Brady JW;Saboungi M-L
+631;Kayitmazer AB;0;Biomacromolecules;2007;Press;;0;NG7SANS and USANS;CHRNS;Effect of Polyelectrolyte Structure on Protein-Polyelectrolyte Coacervates: Coacervates of Bovine Serum Albumin with Poly(dimethyldiallylammonium chloride) vs. Chitosan;Strand SP;Tribet C;Jaeger W, Dubin PL
+632;Wyslouzil BE;0;Physical Chemistry Chemical Physics;2007;Press;;0;NG7SANS;NOT CHRNS;Small angle X-ray scattering measurements probe water nanodroplet evolution under highly non-equilibrium conditions;Wilemski G;Strey R;Seifert S, Winans RE

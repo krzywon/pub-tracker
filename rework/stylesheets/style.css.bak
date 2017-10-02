@@ -1,0 +1,64 @@
+.bordered {
+	border: solid 1px black;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0px;
+}
+.invisible {
+	visibility: hidden;
+}
+body {
+	width: 98%;
+	border: 0;
+	margin: 1%;
+	padding: 0;
+}
+.hidden {
+	display: none;
+}
+.visible {
+	display: block;
+}
+.errors {
+	color: red;
+	border: solid 1px red;
+}
+.displaybox {
+	position: absolute;
+	background-color: white;
+}
+.delete-x, .add-plus {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	border: none;
+	cursor: pointer;
+	height: 16px;
+	padding-left: 16px;
+	vertical-align: middle;
+}
+.delete-x {
+	background-image: url(x_greyscale.jpg);
+}
+.delete-x:hover {
+	background-image: url(x.jpg);
+}
+.add-plus {
+	background-image: url(plus_greyscale.jpg);
+}
+.add-plus:hover {
+	background-image: url(plus.jpg);
+}
+.bold {
+	font-size: 120%;
+	font-weight: bold;
+}
+.success {
+	color: green;
+}
+.indented {
+	margin: 5px;
+	padding: 5px;
+	padding-top: 0;
+	margin-top: 1px;
+}

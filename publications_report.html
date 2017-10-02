@@ -1,0 +1,45 @@
+<? 
+@include("SANS_top.inc");
+include("publistingfuncnew.php");
+?>
+
+<blockquote>
+
+<H1 style="color:#4B0082" align="center">SANS Publications</H1>
+<br clear="right">
+
+<blockquote>
+
+<p><b>If you have written a paper that reports measurements using any of the SANS instruments (NG3/NG7 30m, NG1 8m, BT5 USANS) and you do not see it in the list below, or if the paper is listed but the 
+information is incorrect or out of date, please inform <a href="mailto:jkrzywon@nist.gov">Jeff Krzywon</a> and/or <a href="mailto:butler@nist.gov">Paul Butler</a>.</b></p>
+<p><b>If you write a paper that reports measurements using any of the SANS Instruments, please be sure to
+<br>(a) include an acknowledgement to NIST if there are no NIST coauthors
+<br>(b) (for NG3 30m SANS or USANS only) include an <A href="/programs/CHRNS/publications.html"> acknowledgement</A> to the NSF
+<br>(c) include a reference to the appropriate paper describing the Instrument used (not applicable for 8m SANS):</b></p>
+<blockquote>
+<p>30m SANS: <a href="http://www.ncnr.nist.gov/programs/sans/pdf/publications/SANS_30m.pdf">"The 30 m Small-Angle Neutron Scattering Instruments at the National Institute of Standards and Technology"</a>, Glinka CJ, et al. <i>J Appl. Cryst.</i> <b>31</b>(3), 430 (1998).
+<br>USANS: <a href="http://www.ncnr.nist.gov/programs/sans/pdf/publications/0456.pdf">"Design and performance of a thermal-neutron double-crystal diffractometer for USANS at NIST"</a>, Barker JG, et al. <i>J Appl. Cryst.</i> <b>38</b>(6), 1004 (2005).</p>
+</blockquote>
+<p><b>If you reduced your data using the Igor Macros, please include the following reference:</b></p>
+<blockquote>
+<p>"<a href="http://www.ncnr.nist.gov/programs/sans/pdf/publications/0569.pdf" target="_blank">Reduction and Analysis of SANS and USANS Data using Igor Pro</a>", Kline, S. R. <i>J Appl. Cryst.</i> <b>39</b>(6), 895 (2006).</p>
+</blockquote>
+<p><b>Please be aware that all papers with NIST coauthors must be reviewed and approved by the Washington Editorial Review Board (WERB). Members of WERB are concerned not only with scientific merit but with three specific matters: measurement uncertainties, the use of SI units, and brand names. For more detailed information please <A href="/WERB.html">click here</A> and/or speak with your NIST coauthor(s).</b></p>
+</blockquote>
+
+<h3 style="color:#800000">In Press</h3>
+<p><b>All linked articles open in a new window in PDF format.  You can download the latest version of Adobe Acrobat Reader <a href="http://www.nist.gov/cgi-bin/exit_nist.cgi?url=http://www.adobe.com/products/acrobat/readstep2.html">here</a>*.</b></p>
+
+<h3 style="color:#800000">2010 Publications</h3>
+<?php
+pubList(2010, all, 'publications.csv');
+?>
+
+<h3 style="color:#800000">2009 Publications</h3>
+<?php
+pubList(2009, all, 'publications.csv');
+?>
+
+<? 
+@include("SANS_bottom1.inc");
+?>
